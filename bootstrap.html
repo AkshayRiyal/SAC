@@ -4,10 +4,10 @@
   <title>Bootstrap Case</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="jquery-2.2.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 	<style type="text/css">
 .style1 {
 	float: left;
@@ -17,10 +17,13 @@
 .style2 {
 	margin-left: 0px;
 }
+.pad {
+padding:10px;
+}
 </style>
 </head>
 <body  >
-     <nav class="navbar navbar-default" style="position:fixed;width:100%" >
+      <nav class="navbar navbar-default" style="position:fixed;width:100%;" >
   <div class="container-fluid" >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="style1" >
@@ -33,8 +36,8 @@
 			Badges</button>
 		  <button type="button" class="btn btn-secondary">Certificate</button>
 		  <button type="button" class="btn btn-secondary" style="width: 80px">Idea</button>
-	         <span class="dropdown" >
-<img src="file:///C:/Users/AKSHAY/Desktop/IMG_4632.JPG" style="margin-left:15px;width:100px;height:40px;" class=" img-circle profile-image  btn  dropdown-toggle" data-toggle="dropdown" >          
+	         <span class="dropdown" > 
+<img src="sumit.png" class="img-thumbnail  btn  dropdown-toggle" data-toggle="dropdown" width="50" height="50"  >          
                     <ul class="dropdown-menu">
                          <li><a href="#">Home</a></li>
                          <li><a href="#">Buy</a></li>
@@ -45,14 +48,15 @@
     </div>
     </div>
     </nav>
-    <br/><br/><br/><br/>
-<br/><br/>
+    <br/><br/>
+ 
+ 
  
      <div class="container">
         
            <br/>&nbsp;&nbsp; <br/>
-       <div class="row">
-          <div class="col-lg-8">
+      
+          <div class="col-md-9">
            <div class="panel panel-primary" >
                <div class="panel-heading">
                   <img src="badge.png"> Recognize Karma
@@ -89,56 +93,91 @@
 						</span>  
 						
         	</div>
-               <div class="panel panel-primary">
-                    <div class="panel-heading">
-                       <div class="row">
-                          <div class="col-lg-1">
-                             <img src="left.jpg;">
-                           </div>
-                           <div class="col-lg-4">
-                             <p style="margin-left:0;float:left;">WALL OF FAME</p>
-                          </div>
-                          <div class="col-lg-2">                 
-                               <form role="form" style="heigth:25px;">
-                               <div class="form-group">
-                               <input type="text" class="form-control" id="input1"></div>
-                               </form>
-                          </div>
-                          <div class="col-lg-2" style="heigth:25px;">
-                                <div class="dropdown" >
-                                       <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-                                       <span class="caret"></span></button>
-                                       <ul class="dropdown-menu">
-                                       <li><a href="#">HTML</a></li>
-                                       <li><a href="#">CSS</a></li>
-                                       <li><a href="#">JavaScript</a></li>
-                                       <li class="divider"></li>
-                                       <li><a href="#">About Us</a></li>
-                                       </ul>
-                                </div>
-                          </div>
-                          <div class="col-lg-2" style="heigth:25px;">
-                                <div class="dropdown" >
-                                       <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-                                       <span class="caret"></span></button>
-                                       <ul class="dropdown-menu">
-                                       <li><a href="#">HTML</a></li>
-                                       <li><a href="#">CSS</a></li>
-                                       <li><a href="#">JavaScript</a></li>
-                                       <li class="divider"></li>
-                                       <li><a href="#">About Us</a></li>
-                                       </ul>
-                                </div>       
-                          </div>
-                          <div class="col-lg-1" style="float:left;">
-                                  <img src="cal.png" />
-                          </div>
-                       </div>
-                     </div>
-                    <div class="panel-body">Panel Content</div>
+			
+			  <div class="panel panel-primary" >
+               <div class="panel-heading">
+                  <img src="wicon.png"> Wall of fame
+				  
+	               <span class="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;
+	                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Service Lines
+                            <span class="caret"></span></button>
+                                 <ul class="dropdown-menu">
+                                    <li>Service Lines</li>
+                                    <li>Analytics</li>
+                                    <li>Analytics-SEA</li>
+									<li>Digital Marketing</li>
+									<li>Digital Marketing India</li>
+                                </ul>
+	                        </span>
+	                     <span class="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;
+	                         <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Practices
+                             <span class="caret"></span></button>
+					     </span>		 
+			    </div>
+                <div class="panel-body">
+	              
+                                    
+                                <div class="form-group">
+                                 <label for="comment">Reason:</label>
+                                 <textarea class="form-control" rows="5" id="comment" placeholder="Please select a karma"></textarea>
+                             </div>
+
+	                          <br/><br/>
+	                        
+							 
+						</span>  
+						
+        	</div>
+               
                </div>
+        </div>
+             <div class="col-md-3">
+	          <div class="panel panel-primary">
+              <div class="panel-heading"><img src="badge.png"> MY BADGES</div>
+       <div class="panel-body">
+	              <div class="col-md-5 pad">
+				       <img src="sumit.png" class="img-thumbnail align-center" width="150" height="400" >
+				  </div>
+				  <div class="col-md-7">
+				       <strong>Sumit Sharma</strong>
+					    <table class="table">
+							 <tr>
+							     <td><img src="gbadge.png"></td>
+								 <td><img src="sbadge.png"></td>
+								 <td><img src="bbadge.png"></td>
+							 </tr>
+							 <tr>
+							     <td>0</td>
+								 <td>0</td>
+								 <td>0</td>
+							 </tr>
+						</table>	 
+				  </div>
+	   </div>
+     </div>
+     
+	   <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>    
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>NEWER BOARD</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>IDEAS</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+   
+    
+  </div>
 
 
+
+
+	 </div>
      
             </div>
      
@@ -147,24 +186,7 @@
 
 
     
-            <div class="col-lg-4">
-		<div class="panel panel-primary">
-                    <div class="panel-heading"><img src="badge.png">&nbsp;&nbsp;My BADGES</div>
-                    <div class="panel-body"><img src="ack.png" height="100px" width="100px">Panel Content</div>
-                </div>
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                          <div class="row">
-                                      <div class="col-lg-6">NEWER BOARD</div>
-                                      <div class="col-lg-6">IDEAS</div>
-                          </div>
-                 </div>
-                <div class="panel-body">Panel Content</div>
-            </div>	
-           </div>		
-       </div>
-
-    </span>
+          
 </body>
 </html>
 
