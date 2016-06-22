@@ -9,45 +9,51 @@
   <script src="jquery-2.2.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 	<style type="text/css">
-.style1 {
-	float: left;
-	margin-top: 11px;
-	margin-bottom:12px;	
+#style1 {
+	 float: left;
+	 margin-top: 11px;
+	 margin-bottom:12px;	
+         float:right;
         }
-.style2 {
+#style2 {
 	margin-left: 0px;
-}
-.pad {
-padding:10px;
-}
+        padding-left :0px;
+        }
+.pad    {
+        padding:10px;
+        }
 </style>
 </head>
-<body  >
- <nav class="navbar navbar-default" style="position:fixed;width:100%;" >
-    <div class="container-fluid" >
-       <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="style1" >
-             <img style="max-width:150px;margin-left:80px; margin-top: -7px;"src="logo.png" class="style2"> &nbsp;
-	     <img style="max-width:500px; margin-top: -7px;" src="reapo.png" width="604">
-		  <button type="button" class="btn btn-secondary">Dashboard</button>
-		  <button type="button" class="btn btn-secondary" style="margin-left:6;">Badges</button>
-		  <button type="button" class="btn btn-secondary">Certificate</button>
-		  <button type="button" class="btn btn-secondary" style="width: 80px">Idea</button>
-	         <span class="dropdown" > 
-                    <img src="sumit.png" class="img-thumbnail  btn  dropdown-toggle" data-toggle="dropdown" width="50" height="50"  >          
-                    <ul class="dropdown-menu">
-                         <li><a href="#">Home</a></li>
-                         <li><a href="#">Buy</a></li>
-                         <li><a href="#">sign out</a></li>
-                    </ul>
-                 </span>
-	
-         </div>
+<body>
+   <div class="navbar navbar-default navbar-static-top" role="navigation" style="position:fixed; width:100%; margin-left:0; margin-right:0;">
+      <div class="container-fluid" >
+              <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+           <div class="col-sm-7">
+                  <img style="max-width:150px;  margin-left:0; margin-top:10px;" src="logo.png">
+                  <img style="max-width:500px; margin-top: 10px;" src="reapo.png" width="604">
+           </div>
+           <div id="style1" class="col-sm-5"  >
+                   <div style="float:right;">
+		       <button type="button" class="btn btn-secondary"><img src="ico-dashboard.png">Dashboard</button>
+		       <button type="button" class="btn btn-secondary" style="margin-left:6;"><img src="ico-badge.png">Badges</button>
+		       <button type="button" class="btn btn-secondary"><img src="ico-dashboard.png">Certificate</button>
+		       <button type="button" class="btn btn-secondary" style="width: 80px"><img src="ico-idea.png">Idea</button>
+                       <button type="button" class="btn btn-Default" style="width: 40px"><img src="ico-bell.png"></button>
+	                <span class="dropdown" > 
+                          <img src="sumit.png" class="img-thumbnail  btn  dropdown-toggle" data-toggle="dropdown" width="50" height="50">          
+                           <ul class="dropdown-menu">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Buy</a></li>
+                              <li><a href="#">sign out</a></li>
+                           </ul>
+                        </span>
+                   </div>
+           </div>
+        </div>
       </div>
-    </nav>
-    <br/><br/>
- 
- 
+    </div>
+    <br/><br/><br/>
  
      <div class="container">
         
@@ -82,7 +88,7 @@ padding:10px;
 	                         </span> <br/><br/>
 	                         <div class="form-group">
                                  <label for="comment">Reason:</label>
-                                 <textarea class="form-control" rows="5" id="comment" placeholder="Please select a karma"></textarea>
+                                 <textarea class="form-control" rows="5" id="comment" placeholder="Please select a karma" style="resize:none;"></textarea>
                              </div>
 		            		 <button type="button" class="btn btn-primary" style="float:right;">Recognize</button>            
                              </div>
@@ -159,9 +165,25 @@ padding:10px;
   </ul>
 
   <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h3>NEWER BOARD</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div id="home" class="tab-pane fade in active"><br/>
+         <div class="col-md-5 pad">
+				       <img src="sumit.png" class="img-thumbnail align-center" width="150" height="400" >
+				  </div>
+				  <div class="col-md-7">
+				       <strong>Sumit Sharma</strong>
+					    <table class="table">
+							 <tr>
+							     <td><img src="gbadge.png"></td>
+								 <td><img src="sbadge.png"></td>
+								 <td><img src="bbadge.png"></td>
+							 </tr>
+							 <tr>
+							     <td>0</td>
+								 <td>0</td>
+								 <td>0</td>
+							 </tr>
+						</table>	 
+				  </div>
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>IDEAS</h3>
