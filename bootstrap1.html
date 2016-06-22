@@ -9,59 +9,53 @@
   <script src="jquery-2.2.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 	<style type="text/css">
-.style1 {
-	float: left;
-	margin-top: 11px;
-	margin-bottom:12px;	
+#style1 {
+	 float: left;
+	 margin-top: 11px;
+	 margin-bottom:12px;	
+         float:right;
         }
-.style2 {
+#style2 {
 	margin-left: 0px;
-}
-.pad {
-padding:10px;
-}
+        padding-left :0px;
+        }
+.pad    {
+        padding:10px;
+        }
 </style>
 </head>
-<<<<<<< HEAD
-<body  >
- <nav class="navbar navbar-default" style="position:fixed;width:100%;" >
-    <div class="container-fluid" >
-       <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="style1" >
-             <img style="max-width:150px;margin-left:80px; margin-top: -7px;"src="logo.png" class="style2"> &nbsp;
-	     <img style="max-width:500px; margin-top: -7px;" src="reapo.png" width="604">
-=======
-<body  > 
-      <nav class="navbar navbar-default" style="position:fixed;width:100%;" >
-  <div class="container-fluid" >
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="style1" >
-          <img style="max-width:150px;margin-left:80px; margin-top: -7px;"
-             src="logo.png" class="style2"> &nbsp;
-			 <img style="max-width:500px; margin-top: -7px;"
-             src="reapo.png" width="604">
->>>>>>> 73e21823307570e32759894031caa37047b19321
-		  <button type="button" class="btn btn-secondary">Dashboard</button>
-		  <button type="button" class="btn btn-secondary" style="margin-left:6;">Badges</button>
-		  <button type="button" class="btn btn-secondary">Certificate</button>
-		  <button type="button" class="btn btn-secondary" style="width: 80px">Idea</button>
-	         <span class="dropdown" > 
-                    <img src="sumit.png" class="img-thumbnail  btn  dropdown-toggle" data-toggle="dropdown" width="50" height="50"  >          
-                    <ul class="dropdown-menu">
-                         <li><a href="#">Home</a></li>
-                         <li><a href="#">Buy</a></li>
-                         <li><a href="#">sign out</a></li>
-                    </ul>
-                 </span>
-	
-         </div>
+<body>
+   <div class="navbar navbar-default navbar-static-top" role="navigation" style="position:fixed; width:100%; margin-left:0; margin-right:0;">
+      <div class="container-fluid" >
+              <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+           <div class="col-sm-7">
+                  <img style="max-width:150px;  margin-left:0; margin-top:10px;" src="logo.png">
+                  <img style="max-width:500px; margin-top: 10px;" src="reapo.png" width="604">
+           </div>
+           <div id="style1" class="col-sm-5"  >
+                   <div style="float:right;">
+		       <button type="button" class="btn btn-secondary"><img src="ico-dashboard.png">Dashboard</button>
+		       <button type="button" class="btn btn-secondary" style="margin-left:6;"><img src="ico-badge.png">Badges</button>
+		       <button type="button" class="btn btn-secondary"><img src="ico-dashboard.png">Certificate</button>
+		       <button type="button" class="btn btn-secondary" style="width: 80px"><img src="ico-idea.png">Idea</button>
+                       <button type="button" class="btn btn-Default" style="width: 40px"><img src="ico-bell.png"></button>
+	                <span class="dropdown" > 
+                          <img src="sumit.png" class="img-thumbnail  btn  dropdown-toggle" data-toggle="dropdown" width="50" height="50">          
+                           <ul class="dropdown-menu">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Buy</a></li>
+                              <li><a href="#">sign out</a></li>
+                           </ul>
+                        </span>
+                   </div>
+           </div>
+        </div>
       </div>
-    </nav>
-    <br/><br/>
+    </div>
+    <br/><br/><br/>
  
- 
- 
-     <div class="container-fluid">
+     <div class="container">
         
            <br/>&nbsp;&nbsp; <br/>
       
@@ -94,7 +88,7 @@ padding:10px;
 	                         </span> <br/><br/>
 	                         <div class="form-group">
                                  <label for="comment">Reason:</label>
-                                 <textarea class="form-control" rows="5" id="comment" placeholder="Please select a karma"></textarea>
+                                 <textarea class="form-control" rows="5" id="comment" placeholder="Please select a karma" style="resize:none;"></textarea>
                              </div>
 		            		 <button type="button" class="btn btn-primary" style="float:right;">Recognize</button>            
                              </div>
@@ -103,9 +97,8 @@ padding:10px;
 						
         	</div>
 			
-			  <div class="row" >
-			     <div style="background-color:red">
-              
+			  <div class="panel panel-primary" >
+               <div class="panel-heading">
                   <img src="wicon.png"> Wall of fame
 				  
 	               <span class="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;
@@ -122,8 +115,7 @@ padding:10px;
 	                     <span class="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;
 	                         <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Practices
                              <span class="caret"></span></button>
-					     </span>
-                     </div						 
+					     </span>		 
 			    </div>
                 <div class="panel-body">
 	              
@@ -163,29 +155,21 @@ padding:10px;
 								 <td>0</td>
 							 </tr>
 						</table>	 
-				  </div><br/>
-				  
+				  </div>
 	   </div>
      </div>
      
-	   <ul class="nav nav-tabs" style="padding:10px;">
-    <li class="active nav-tab-li" style="width:50%;"><a data-toggle="tab" href="#home">NEWER BOARD</a></li>
-    <li  style="width:50%;"><a data-toggle="tab" href="#menu1">IDEAS</a></li>    
+	   <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>    
   </ul>
 
-<<<<<<< HEAD
   <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h3>NEWER BOARD</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-=======
-  <div class="tab-content" >
     <div id="home" class="tab-pane fade in active"><br/>
-         <div class="col-md-4 pad">
-				       <img src="sumit.png" class="profile-pic" width="80" height="80" ><br/> <br/><br/> 
-					   <img src="cpic.jpg" class="profile-pic" width="80" height="80" >
+         <div class="col-md-5 pad">
+				       <img src="sumit.png" class="img-thumbnail align-center" width="150" height="400" >
 				  </div>
-				  <div class="col-md-8">
+				  <div class="col-md-7">
 				       <strong>Sumit Sharma</strong>
 					    <table class="table">
 							 <tr>
@@ -198,27 +182,12 @@ padding:10px;
 								 <td>0</td>
 								 <td>0</td>
 							 </tr>
-						</table>	
-                        <strong>Chandan</strong>
-					    <table class="table">
-							 <tr>
-							     <td><img src="gbadge.png"></td>
-								 <td><img src="sbadge.png"></td>
-								 <td><img src="bbadge.png"></td>
-							 </tr>
-							 <tr>
-							     <td>0</td>
-								 <td>0</td>
-								 <td>0</td>
-							 </tr>
-						</table>	 						
+						</table>	 
 				  </div>
-				  
->>>>>>> 73e21823307570e32759894031caa37047b19321
     </div>
     <div id="menu1" class="tab-pane fade">
-      contents to be added
-      
+      <h3>IDEAS</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
    
     
