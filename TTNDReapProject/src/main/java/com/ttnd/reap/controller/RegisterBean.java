@@ -5,7 +5,9 @@ public class RegisterBean {
 	private String lastName;
 	
 	private String dob;
+	static{System.out.println(":::::::::::::::::");
 	
+    }
 	private String email;
 	private String password;
 	private String gender;

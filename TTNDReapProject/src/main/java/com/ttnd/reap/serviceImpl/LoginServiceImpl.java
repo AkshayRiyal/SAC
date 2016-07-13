@@ -11,7 +11,9 @@ public class LoginServiceImpl implements ILoginService {
 
 	 @Autowired
 	private LoginDAO loginDAO;
-
+	 static{System.out.println(":::::::::::::::::");
+ 	
+	    }
 	public void setLoginDAO(LoginDAO loginDAO) {
 		this.loginDAO = loginDAO;
 	}

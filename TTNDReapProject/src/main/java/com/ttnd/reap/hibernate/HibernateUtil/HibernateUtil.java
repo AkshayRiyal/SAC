@@ -1,4 +1,4 @@
-package com.ttnd.reap.hibernate.HibernateUtil;
+package com.ttnd.reap.hibernate.hibernateUtil;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
