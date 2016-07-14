@@ -36,5 +36,6 @@ public class Badges {
 	public void setBadgeWeight(Integer badgeWeight) {
 		this.badgeWeight = badgeWeight;
 	}
+	
 
 }

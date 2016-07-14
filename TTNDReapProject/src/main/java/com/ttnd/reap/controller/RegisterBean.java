@@ -3,11 +3,7 @@ package com.ttnd.reap.controller;
 public class RegisterBean {
 	private String firstName;
 	private String lastName;
-	
 	private String dob;
-	static{System.out.println(":::::::::::::::::");
-	
-    }
 	private String email;
 	private String password;
 	private String gender;

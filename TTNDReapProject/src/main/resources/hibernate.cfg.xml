@@ -17,13 +17,13 @@
 
 		<property name="hibernate.connection.pool_size">1</property>
 
-		<mapping class="com.reap.hibernate.model.Employee" />
-		<mapping class="com.reap.hibernate.model.Practice" />
-		<mapping class="com.reap.hibernate.model.Services" />
-		<mapping class="com.reap.hibernate.model.Badges" />
-		<mapping class="com.reap.hibernate.model.Badges_Remaining" />
-		<mapping class="com.reap.hibernate.model.Recognise"/>
+		<mapping class="com.ttnd.reap.hibernate.model.Employee" />
+		<mapping class="com.ttnd.reap.hibernate.model.Practice" />
+		<mapping class="com.ttnd.reap.hibernate.model.Services" />
+		<mapping class="com.ttnd.reap.hibernate.model.Badges" />
+		<mapping class="com.ttnd.reap.hibernate.model.BadgesRemaining" />
+		<mapping class="com.ttnd.reap.hibernate.model.Recognise"/>
 
-
+  
 	</session-factory>
 </hibernate-configuration>

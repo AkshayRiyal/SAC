@@ -14,12 +14,12 @@ import com.ttnd.reap.serviceImpl.LoginServiceImpl;
 @Controller
 
 public class MyController {
-    
+
 	@Autowired
 	ILoginService loginService;
 	@Autowired
 	IRegisterService registerService;
-
+ 
 	public void setLoginService(LoginServiceImpl loginService) {
 		this.loginService = loginService;
 	}
@@ -31,7 +31,7 @@ public class MyController {
 		return "login";
 	}
 
-	@RequestMapping(value = "/userLogin", method = RequestMethod.POST)
+	@RequestMapping(value = "/dashboard", method = RequestMethod.POST)
 	public String submit(Model model, @ModelAttribute("loginBean") LoginBean loginBean) {
 		System.out.println(loginService);
 		System.out.println(":::::::::::::::::::::::::::::::::::::::::::");
@@ -49,15 +49,25 @@ public class MyController {
 		}
 	}
 
-	@RequestMapping(value="/register",method = RequestMethod.POST)
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public String registerData(Model model, @ModelAttribute("registerBean") RegisterBean registerBean) {
 		System.out.println(registerService);
 		System.out.println(":::::::::::::::::::::::::::::::::::::::::::");
 		if (registerService.register(registerBean.getFirst_name(), registerBean.getLast_name(), registerBean.getDob(),
 				registerBean.getEmail(), registerBean.getPassword(), registerBean.getGender(),
 				registerBean.getServices(), registerBean.getPractice(), registerBean.getRole()))
-			;
-		return "success";
+			{
+			model.addAttribute("registerSuccess", "User Registered Sucessfully");
+			return "login";
+			
+			}
+		else {
+			model.addAttribute("registerError", "Enter Valid details");
+			return "login";
+			
+		}
+		
 	}
+	
 
 }

@@ -19,18 +19,17 @@ import com.ttnd.reap.hibernate.model.Employee;
 @Component
 public class LoginDAOImpl implements LoginDAO {
 
-	@Resource(name = "sessionFactory")
-	protected SessionFactory sessionFactory;
+	
 
 	public boolean checkLogin(String userName, String userPassword) {
 		System.out.println("In Check login");
-		sessionFactory = HibernateUtil.getSessionFactory();
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		boolean userFound = false;
 
 		System.out.println(userName + " " + userPassword);
-		Criteria crit = session.createCriteria(Employee.class).add(Restrictions.like("email", userName))
-				.add(Restrictions.like("password", userPassword));
+		Criteria crit = session.createCriteria(Employee.class).add(Restrictions.eq("email", userName));
+			
 
 		List<Employee> list = crit.list();
 		System.out.println(list.size());
